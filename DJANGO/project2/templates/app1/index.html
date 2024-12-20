@@ -1,0 +1,22 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Project</h2>
+    <table border="3">
+        {%for pname,data in table.items%}
+        <tr>
+            <td>{{pname}}</td>
+            <td>{{data.0}}</td>
+            <td><img src="/static/images/{{data.1}}"></td>
+        </tr>
+        {%endfor%}
+    </table>
+</body>
+</html>
