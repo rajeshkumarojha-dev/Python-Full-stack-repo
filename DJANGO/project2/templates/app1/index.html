@@ -12,8 +12,8 @@
     <table border="3">
         {%for pname,data in table.items%}
         <tr>
-            <td>{{pname}}</td>
-            <td>{{data.0}}</td>
+            <td>{{pname|upper}}</td>
+            <td>{{data.0|title}}</td>
             <td><img src="/static/images/{{data.1}}"></td>
         </tr>
         {%endfor%}
