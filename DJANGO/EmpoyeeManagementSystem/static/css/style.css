@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+.wrapper {
+    padding: 1rem;
+    width: 80%;
+    box-shadow: 0 0 10px #202020;
+    border-radius: 20px;
+}
+
+.container {
+    border: 3px solid black;
+    position: relative;
+    border-radius: 20px;
+    padding: .5rem 1rem;
+}
+
+.addemp {
+    background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%)
+}
+
+.addemp {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    width: 240px;
+    position: absolute;
+    right: 0;
+    top: -100px;
+    text-decoration: none;
+}
+
+.addemp:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.heading{
+    background-image: radial-gradient( circle 710px at 5.2% 7.2%,  rgba(37,89,222,1) 0%, rgba(37,89,222,1) 7.5%, rgba(4,4,29,1) 44.7% );
+    color: white;
+    padding: 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+}
+table{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 20px;
+    margin-top: 2rem;
+}
+th{
+    border-left: 2px solid;
+    font-size: 20px;
+}
+td{
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+.editbtn{
+    background-image: radial-gradient( circle 382px at 50% 50.2%,  rgba(73,76,212,1) 0.1%, rgba(3,1,50,1) 100.2% );
+    font-size: 14px;
+    color:  white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.deletebtn{
+    background-image: linear-gradient( 109.6deg,  rgba(204,0,0,1) 11.2%, rgba(68,0,0,1) 100.6% );
+    font-size: 14px;
+    color:  white;
+    padding: 10px;
+    border-radius: 10px;
+}

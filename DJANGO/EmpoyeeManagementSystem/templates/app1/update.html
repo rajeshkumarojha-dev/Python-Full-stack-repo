@@ -1,0 +1,8 @@
+{%extends 'app1/index.html'%}
+{%block content%}
+<form action="" method="POST">
+    {%csrf_token%}
+    {{empform}}
+    <input type="submit" value="update">
+</form>
+{%endblock%}

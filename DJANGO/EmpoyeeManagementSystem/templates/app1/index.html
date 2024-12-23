@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    {%block content%}
+    <div class="wrapper">
+        <div class="container">
+            <a href="/add" class="addemp">Add Employee</a>
+            <div class="content">
+                <div class="heading">
+                    <h1>Employee Management System</h1>
+                </div>
+                <div class="data">
+                    <table>
+                        <tr>
+                            <th>Empid</th>
+                            <th>Employee Name</th>
+                            <th>Job</th>
+                            <th>Salery</th>
+                            <th>Phone Number</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                        {%for row in qs%}
+                        <tr>
+                            <td>{{row.empid}}</td>
+                            <td>{{row.ename}}</td>
+                            <td>{{row.job}}</td>
+                            <td>{{row.salery}}</td>
+                            <td>{{row.phone}}</td>
+                            <td><a href="/update/{{row.empid}}" class="editbtn">EDIT</a></td>
+                            <td><a href="/delete/{{row.empid}}" class="deletebtn">DELETE</a></td>
+                        </tr>
+                        {%endfor%}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    {%endblock%}
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+{%extends 'app1/index.html'%}
+{%block content%}
+<div class="addemployee">
+    <div class="addcontent">
+        <div class="empheading">
+            <h1>Add Employee</h1>
+        </div>
+        <div class="empcontent">
+            <form action="/add/" method="POST">
+                {%csrf_token%}
+                {{form}}
+                <button>Add Employee</button>
+            </form>
+        </div>
+        <h1>{{msg}}</h1>
+    </div>
+</div>
+{%endblock%}
