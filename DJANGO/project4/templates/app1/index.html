@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="POST" enctype="multipart/form-data">
+        {%csrf_token%}
+        {{form}}
+        <button type="submit">Submit</button>
+    </form>
+    <div class="container">
+        {%for row in img%}
+        <img src="{{row.image}}" alt="" height="150px" width="250px">
+        <p>{{row.name}}</p>
+        <p>{{row.date}}</p>
+        {%endfor%}
+    </div>
+</body>
+</html>
