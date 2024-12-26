@@ -1,15 +1,16 @@
 {%extends 'app1/index.html'%}
 {%block content%}
-<div class="addemployee">
+<div class="addemployee emp">
     <div class="addcontent">
-        <div class="empheading">
+        <div class="empheading heading">
             <h1>Add Employee</h1>
         </div>
         <div class="empcontent">
             <form action="/add/" method="POST">
                 {%csrf_token%}
                 {{form}}
-                <button>Add Employee</button>
+                <button class="add">Add Employee</button>
+                <a href="/" class="home">Back to Home</a>
             </form>
         </div>
         <h1>{{msg}}</h1>

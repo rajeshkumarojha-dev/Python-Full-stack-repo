@@ -1,8 +1,19 @@
 {%extends 'app1/index.html'%}
 {%block content%}
-<form action="" method="POST">
-    {%csrf_token%}
-    {{empform}}
-    <input type="submit" value="update">
-</form>
+<div class="emp">
+    <div class="addcontent">
+        <div class="heading">
+            <h1>UPDATE EMPLOYEE</h1>
+        </div>
+        <div class="empcontent">
+            <form action="" method="POST">
+                {%csrf_token%}
+                {{empform}}
+                <input type="submit" value="update" class="add">
+                <a href="/" class="home">Back to Home</a>
+            </form>
+        </div>
+    </div>
+</div>
+
 {%endblock%}
