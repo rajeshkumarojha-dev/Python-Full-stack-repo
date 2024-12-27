@@ -6,8 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="POST">
+    <form action="" method="POST" novalidate>
+        
         {%csrf_token%}
+        {%if from.non_field_errors%}
+            {%for error in form.non_field_errors%}
+                <p>{{error}}</p>
+            {%endfor%}
+        {%endif%}
+        {%for row in forms%}
+            {{row.label_tag}} {{row}} {{row.errors}}
+        {%endfor%}
         {{form}}
         <button type="submit">Submit</button>
     </form>
