@@ -1,11 +1,11 @@
-import React,{useEffect, useState} from 'react'
+import React,{useEffect ,useState} from 'react'
 
 const UseeffectHooks = () => {
     const[data,setData]=useState(0)
     const [count,setCount]=useState(100)
-    // useEffect(()=>{
-    //     alert('data'+data)
-    // },[data])
+    useEffect(()=>{
+        alert('data'+data)
+    },[data])
   return (
 
     <div>

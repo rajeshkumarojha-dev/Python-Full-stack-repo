@@ -11,6 +11,7 @@ const Forms = () => {
     const [movie,setMovie]=useState()
     return (
         <div>
+            <h1 className="U">Form Page</h1>
             <form action="" onSubmit={formSubmit}>
                 <input type="text" placeholder='Enter name' onChange={(e)=>setName(e.target.value)}/>
                 <select onChange={(e)=>setMovie(e.target.value)}>
